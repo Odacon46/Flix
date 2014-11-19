@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class MovieTest < ActiveSupport::TestCase
+<<<<<<< HEAD
   test "simple arithmetic should pass" do
     assert 1+1 == 2
   end
@@ -84,3 +85,9 @@ end
 
 
 
+=======
+  # test "the truth" do
+  #   assert true
+  # end
+end
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46

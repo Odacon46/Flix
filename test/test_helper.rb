@@ -12,7 +12,10 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+<<<<<<< HEAD
   def random_runtime
   	rand(45..300)
   end
+=======
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
 end

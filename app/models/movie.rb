@@ -1,4 +1,5 @@
 class Movie < ActiveRecord::Base
+<<<<<<< HEAD
 	validates :title, :mpaa_rating, :runtime, :poster_image, presence: true
 	validates :runtime, numericality: true
 	validate :mpaa_rating_must_be_in_list
@@ -33,4 +34,6 @@ class Movie < ActiveRecord::Base
 				errors.add(:mpaa_rating, "must be a valid MPAA rating.")
 			end
 		end
+=======
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
 end

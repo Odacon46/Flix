@@ -39,11 +39,15 @@
               <a href="#"><span>Blog</span></a>
             </li>
             <li class="last">
+<<<<<<< HEAD
               <% if user_signed_in? %>
               <%= link_to "<span>Sign Out</span>".html_safe, destroy_user_session_path, method: :delete %>
               <% else %>
               <%= link_to "<span>Sign In</span>".html_safe, new_user_session_path %>
               <% end %>
+=======
+              <a href="#"><span>My Account</span></a>
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
             </li>
           </ul>
         </nav>

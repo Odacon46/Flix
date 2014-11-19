@@ -9,6 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+<<<<<<< HEAD
  *= require 'normalize.min'
+=======
+ *=require 'normalize.min'
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
  *= require_tree .
  */

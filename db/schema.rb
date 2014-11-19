@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20141119211015) do
 
   create_table "cast_members", force: true do |t|
@@ -27,6 +28,9 @@ ActiveRecord::Schema.define(version: 20141119211015) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+=======
+ActiveRecord::Schema.define(version: 20141117204858) do
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
 
   create_table "movies", force: true do |t|
     t.string   "title"
@@ -40,6 +44,7 @@ ActiveRecord::Schema.define(version: 20141119211015) do
     t.date     "release_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+<<<<<<< HEAD
     t.string   "director"
     t.string   "producer"
     t.string   "studio"
@@ -66,4 +71,8 @@ ActiveRecord::Schema.define(version: 20141119211015) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
+=======
+  end
+
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
 end

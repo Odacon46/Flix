@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 <h1>What Movie Do You Want to See?</h1>
+=======
+
+          <h1>What Movie Do You Want to See?</h1>
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
           <h3>Find your perfect movie fast with Flix. Get movie showtimes, reviews and more.</h3>
         </div>
         <div class="tabgroup">
           <nav class="tabs clearfix">
             <ul>
+<<<<<<< HEAD
               <li<%= ' class=active' if @placement.nil? %>><%= link_to "All Movies", movies_path %><li>
               <li<%= ' class=active' if @placement == "in_theaters" %>><%= link_to "In Theaters", "/movies/recommended/in_theaters" %><li>
               <li<%= ' class=active' if @placement == "coming_soon" %>><%= link_to "Coming Soon", "/movies/recommended/coming_soon" %><li>
@@ -12,6 +18,31 @@
           </nav>
           <div class="clearfix">
             <%= render 'movie_list', movies: @movies %>
+=======
+              <li class="active"><a href="#">All Movies</a></li>
+              <li><a href="#">In Theaters</a></li>
+              <li><a href="#">Coming Soon</a></li>
+              <li><a href="#">Go Now</a></li>
+            </ul>
+          </nav>
+          <div class="clearfix">
+            <ul class="content-links-list clearfix">
+              <% @movies.each do |movie| %>
+                <li>
+                  <%= link_to movie_path(movie) do %>
+                    <div class="clearfix">
+                      <%= image_tag "posters/thumbs/#{movie.poster_image}", class: 'imgLeft' %>
+                      <div class="clearfix">
+                        <h3><%= movie.title %></h3>
+                        <div><%= movie.mpaa_rating %>, <%= movie.runtime %> minutes</div>
+                        <div><span class="button">More ›</span></div>
+                      </div>
+                    </div>
+                  <% end %>
+                </li>
+              <% end %>
+            </ul>
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
             <div class="inset-block">
               <a class="more-movies" href="#">View More Movies</a>
             </div>

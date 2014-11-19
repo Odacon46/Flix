@@ -1,16 +1,25 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+<<<<<<< HEAD
 gem 'rails', '4.0.0'
+=======
+gem 'rails', '4.0.4'
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+<<<<<<< HEAD
 # Use devise for user authentication
 gem 'devise'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+=======
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.2'
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -36,7 +45,11 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
+<<<<<<< HEAD
 # gem 'bcrypt-ruby', '~> 3.0.0'
+=======
+# gem 'bcrypt', '~> 3.1.7'
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
 
 # Use unicorn as the app server
 # gem 'unicorn'

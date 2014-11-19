@@ -4,7 +4,11 @@ require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
+<<<<<<< HEAD
 Bundler.require(:default, Rails.env)
+=======
+Bundler.require(*Rails.groups)
+>>>>>>> 2f4362f9cc18d8373d784910fed8064851e4cb46
 
 module Flix
   class Application < Rails::Application
